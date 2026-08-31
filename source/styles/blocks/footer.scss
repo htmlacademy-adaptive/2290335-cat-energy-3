@@ -1,0 +1,117 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66 110px;
+  }
+}
+
+.page-footer__name {
+  margin: 0 40px;
+  padding: 40px 54px 20px;
+  border-bottom: solid 1px $border_line_2;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-top: 5px;
+  }
+}
+
+.social__list {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+  padding: 20px 54px;
+  margin: 0 40px;
+  border-bottom: solid 1px $border_line_2;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-left: 39px;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: $special_dark_grey;
+
+  &:is(:hover, :focus-visible, :focus) {
+    background-color: $green_primary;
+  }
+
+  &:active {
+    background-color: $green_primary;
+    opacity: 0.3;
+  }
+}
+
+.logo-text {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.social__link--vk {
+  mask-image: url("../../icons/social-vkontakte.svg");
+}
+
+.social__link--youtube {
+  mask-image: url("../../icons/social-youtube.svg");
+}
+
+.social__link--telegram {
+  mask-image: url("../../icons/social-telegram.svg");
+}
+
+.page-footer__copyright {
+  padding: 20px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: $special_dark_grey;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.copyright__developer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::after {
+    @include pseudo-element(27px, 34px, $special_dark_grey);
+    mask-image: url("../../icons/stack.svg#developer-logo");
+    margin-left: 23px;
+  }
+
+  &:is(:hover, :focus-visible, :focus)::after {
+    background-color: $green_primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

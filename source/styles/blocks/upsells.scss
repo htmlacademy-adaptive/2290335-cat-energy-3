@@ -1,0 +1,281 @@
+.upsells {
+  padding: 0 20px;
+  margin-top: -18px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 96px;
+  }
+}
+
+.upsells__title {
+  font-family: $alter-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 25px 0 14px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 70px 0 80px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    padding-left: 70px;
+  }
+
+  &::after {
+    @include pseudo-element(100%, 2px, $green_primary);
+    position: absolute;
+    top: 42px;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      top: 86px;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 91px;
+    }
+  }
+}
+
+.upsells__text {
+  position: relative;
+  z-index: 2;
+  background-color: $white;
+  padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+}
+
+.upsells__content {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+  }
+}
+
+.upsells__list {
+  @include resetTagUl;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $supreme_decorative;
+  border-bottom: 1px solid $supreme_decorative;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $supreme_decorative;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: 0;
+    min-width: 896px;
+    height: 288px;
+    border-top: 1px solid $supreme_decorative;
+    border-bottom: 1px solid $supreme_decorative;
+  }
+}
+
+.upsells__item {
+  width: 100%;
+  height: 130px;
+  padding: 13px 0 19px;
+  border-bottom: 1px solid $supreme_decorative;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    height: 139px;
+    padding: 26px 36px 28px 38px;
+    display: grid;
+    grid-template-rows: auto 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    border-top: 1px solid $supreme_decorative;
+    border-bottom: 1px solid $supreme_decorative;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.upsells__name {
+  margin: 0;
+  font-family: $alter-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    width: 285px;
+  }
+}
+
+.upsells__properties {
+  font-size: 14px;
+  line-height: 14px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    gap: 49px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 2px 5px 21px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    width: 285px;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+.upsells__property-wrapper {
+  display: inline;
+}
+
+.upsells__volume,
+.upsells__price {
+  display: inline;
+  margin: 0;
+}
+
+.upsells__button {
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    height: 40px;
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
+}
+
+.upsells__gift {
+  height: 290px;
+  background-color: $green_primary-85;
+  background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("./images/catalog-upsells-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("./images/catalog-upsells-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    object-fit: cover;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 70px;
+    background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("./images/catalog-upsells-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("./images/catalog-upsells-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("./images/catalog-upsells-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("./images/catalog-upsells-desktop@2x.png");
+    }
+
+    width: 245px;
+    height: 288px;
+    margin: 0;
+    flex-direction: column-reverse;
+  }
+
+  &::after {
+    @include pseudo-element(78px, 80px, transparent);
+    background-image: url("../../icons/stack.svg#gift-icon");
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 82px;
+      margin-bottom: 6px;
+      margin-left: 78px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 83px;
+      margin: 56px 82px 0;
+    }
+  }
+}
+
+.upsells__information {
+  margin: 0;
+  text-align: center;
+  width: 161px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  padding: 48px 2px 43px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    text-align: left;
+    padding-right: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 46px 42px 43px;
+    text-align: center;
+  }
+}

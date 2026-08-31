@@ -1,1 +1,95 @@
+// common.scss
+.button {
+  font-family: $alter-font;
+  width: 280px;
+  height: 40px;
+  text-transform: uppercase;
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+
+.button--green {
+  background-color: $green_primary;
+  color: $white;
+
+  &:hover {
+    background-color: $basic_green_2;
+  }
+
+  &:active {
+    color: $white-30;
+  }
+}
+
+.button--grey {
+  background-color: $basic_grey;
+  color: $special_dark_grey;
+
+  &:hover {
+    background-color: $special_grey_3;
+  }
+
+  &:active {
+    color: $special_grey_3;
+  }
+}
+
+.title {
+  margin: 0;
+  font-family: $alter-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.logo-text {
+  &:is(:hover, :focus-visible, :focus) {
+    fill: $concreate_text;
+  }
+
+  &:active {
+    fill: $concreate_active;
+  }
+}
+
+.page__body {
+  font-family: $primary-font;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* здесь используйте глобальные селекторы img, body, html и так далее */

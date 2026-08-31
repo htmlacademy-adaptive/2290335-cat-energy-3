@@ -1,0 +1,232 @@
+.programs {
+  padding: 25px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.programs__list {
+  @include resetTagUl;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-flow: row wrap;
+    gap: 80px;
+  }
+}
+
+.programs__item {
+  background-color: $basic_grey;
+  box-sizing: border-box;
+  width: 280px;
+  padding: 20px 33px 18px 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    width: 708px;
+    padding: 77px 63px 53px 52px;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 374px;
+    padding: 41px 61px 55px 52px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  &::before {
+    @include pseudo-element(50px, 53px, $basic_grey);
+
+    @media (min-width: $tablet-width) {
+      grid-column: 2/-1;
+      grid-row: 1 / -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      margin-right: 62px;
+    }
+  }
+}
+
+.programs__item--pro {
+  padding: 24px 33px 18px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 29px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 31px 61px 55px 32px;
+
+    .programs__name {
+      margin-top: 10px;
+    }
+
+    .programs__description {
+      padding-left: 20px;
+    }
+
+    .programs__button {
+      padding-left: 20px;
+    }
+  }
+}
+
+.programs__name {
+  margin: 0;
+  font-family: $alter-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+  }
+}
+
+.programs__description {
+  margin: 0;
+  color: $special_dark_grey;
+  font-size: 14px;
+  line-height: 18px;
+  grid-column: 1/-1;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 22px;
+
+    &::after {
+      @include pseudo-element(240px, 1px, $border_line_2);
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    padding-top: 39px;
+    padding-bottom: 23px;
+  }
+}
+
+.programs__item--slim::before {
+  background-image: url("../../icons/stack.svg/#cat-back1-icon");
+
+  @media (max-width: $tablet-width) {
+    margin-right: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+  }
+}
+
+.programs__item--pro::before {
+  background-image: url("../../icons/stack.svg/#cat-back2-icon");
+  width: 67px;
+  height: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    margin-right: -3px;
+    margin-top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    margin-right: 47px;
+    margin-top: 14px;
+  }
+}
+
+.programs__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $alter-font;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 4px 0;
+  color: $black;
+  display: inline-flex;
+  align-items: center;
+  grid-column: 1 / -1;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
+
+  &::after {
+    @include pseudo-element(32px, 10px, $basic_grey);
+    background-image: url("../../icons/stack.svg/#arrow-right-icon");
+    padding-left: 52px;
+    transform-origin: left center;
+    transition: transform 0.3s linear;
+  }
+
+  &:is(:hover, :focus-visible, :focus)::after {
+    transform: scaleX(1.35);
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}

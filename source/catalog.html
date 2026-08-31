@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Кэт Энерджи Каталог</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="./index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="./images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+        <img class="page-header__image" src="./images/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
+      </picture>
+      <img class="page-header__name" src="./images/logo-text.svg" alt="Кэт Энерджи" width="101" height="20">
+    </a>
+    <nav class="page-header__navigation" aria-label="Главное меню">
+      <button class="page-header__button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="page-header__list">
+        <li class="page-header__item">
+          <a class="page-header__link" href="./index.html" tabindex="0">Главная</a>
+        </li>
+        <li class="page-header__item page-header__item--active">
+          <a class="page-header__link page-header__link--active" href="./catalog.html" tabindex="0">Каталог продукции</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#" tabindex="0">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-container">
+    <h1 class="visually-hidden">Каталог кошачего корма и других продуктов для кошек</h1>
+    <section class="products">
+      <h2 class="products__title">Каталог&nbsp;продукции</h2>
+      <ul class="products__list">
+        <li class="products__item">
+          <div class="card">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/product-1-desktop@1x.webp 1x, ./images/product-1-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-1-tablet@1x.webp 1x, ./images/product-1-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
+              <source srcset="./images/product-1-mobile@1x.webp 1x, ./images/product-1-mobile@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1200px)" srcset="./images/product-1-desktop@1x.png 1x, ./images/product-1-desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-1-tablet@1x.png 1x, ./images/product-1-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="./images/product-1-mobile@1x.png" srcset="./images/product-1-mobile@1x.png 1x, ./images/product-1-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
+            </picture>
+            <h3 class="card__name">
+              <a class="card__name-link" href="#">Cat Energy PRO 500 г</a>
+            </h3>
+            <dl class="card__properties-list">
+              <div class="card__property-wrapper">
+                <dt class="card__property">Масса</dt>
+                <dd class="card__value">500 г</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Вкус</dt>
+                <dd class="card__value">Курица</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Цена</dt>
+                <dd class="card__value">700 ₽</dd>
+              </div>
+            </dl>
+            <button class="button button--green card__button" type="button">Заказать</button>
+          </div>
+        </li>
+        <li class="products__item">
+          <div class="card">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/product-2-desktop@1x.webp 1x, ./images/product-2-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-2-tablet@1x.webp 1x, ./images/product-2-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
+              <source srcset="./images/product-1-mobile@1x.webp 1x, ./images/product-2-mobile@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1200px)" srcset="./images/product-2-desktop@1x.png 1x, ./images/product-2-desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-2-tablet@1x.png 1x, ./images/product-2-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="/images/product-2-mobile@1x.png" srcset="./images/product-2-mobile@1x.png 1x, ./images/product-2-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
+            </picture>
+            <h3 class="card__name">
+              <a class="card__name-link" href="#">Cat Energy PRO 1000 г</a>
+            </h3>
+            <dl class="card__properties-list">
+              <div class="card__property-wrapper">
+                <dt class="card__property">Масса</dt>
+                <dd class="card__value">1000 г</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Вкус</dt>
+                <dd class="card__value">Курица</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Цена</dt>
+                <dd class="card__value">1000 ₽</dd>
+              </div>
+            </dl>
+            <button class="button button--green card__button" type="button">Заказать</button>
+          </div>
+        </li>
+        <li class="products__item">
+          <div class="card">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/product-3-desktop@1x.webp 1x, ./images/product-3-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-3-tablet@1x.webp 1x, ./images/product-3-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
+              <source srcset="./images/product-3-mobile@1x.webp 1x, ./images/product-3-mobile@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1200px)" srcset="./images/product-3-desktop@1x.png 1x, ./images/product-3-desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-3-tablet@1x.png 1x, ./images/product-3-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="./images/product-3-mobile@1x.png" srcset="./images/product-3-mobile@1x.png 1x, ./images/product-3-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
+            </picture>
+            <h3 class="card__name">
+              <a class="card__name-link" href="#">Cat Energy PRO 500 г</a>
+            </h3>
+            <dl class="card__properties-list">
+              <div class="card__property-wrapper">
+                <dt class="card__property">Масса</dt>
+                <dd class="card__value">500 г</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Вкус</dt>
+                <dd class="card__value">Рыба</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Цена</dt>
+                <dd class="card__value">700 ₽</dd>
+              </div>
+            </dl>
+            <button class="button button--green card__button" type="button">Заказать</button>
+          </div>
+        </li>
+        <li class="products__item">
+          <div class="card">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/product-4-desktop@1x.webp 1x, ./images/product-4-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-4-tablet@1x.webp 1x, ./images/product-4-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
+              <source srcset="./images/product-4-mobile@1x.webp 1x, ./images/product-4-mobile@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1200px)" srcset="./images/product-4-desktop@1x.png 1x, ./images/product-4-desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-4-tablet@1x.png 1x, ./images/product-4-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="./images/product-4-mobile@1x.png" srcset="./images/product-4-mobile@1x.png 1x, ./images/product-4-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
+            </picture>
+            <h3 class="card__name">
+              <a class="card__name-link" href="#">Cat Energy PRO 1000 г</a>
+            </h3>
+            <dl class="card__properties-list">
+              <div class="card__property-wrapper">
+                <dt class="card__property">Масса</dt>
+                <dd class="card__value">1000 г</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Вкус</dt>
+                <dd class="card__value">Рыба</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Цена</dt>
+                <dd class="card__value">1000 ₽</dd>
+              </div>
+            </dl>
+            <button class="button button--green card__button" type="button">Заказать</button>
+          </div>
+        </li>
+        <li class="products__item">
+          <div class="card">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/product-5-desktop@1x.webp 1x, ./images/product-5-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-5-tablet@1x.webp 1x, ./images/product-5-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
+              <source srcset="./images/product-5-mobile@1x.webp 1x, ./images/product-5-mobile@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1200px)" srcset="./images/product-5-desktop@1x.png 1x, ./images/product-5-desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-5-tablet@1x.png 1x, ./images/product-5-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="./images/product-5-mobile@1x.png" srcset="./images/product-5-mobile@1x.png 1x, ./images/product-5-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
+            </picture>
+            <h3 class="card__name">
+              <a class="card__name-link" href="#">Cat Energy sLIM 500 г</a>
+            </h3>
+            <dl class="card__properties-list">
+              <div class="card__property-wrapper">
+                <dt class="card__property">Масса</dt>
+                <dd class="card__value">500 г</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Вкус</dt>
+                <dd class="card__value">Гречка</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Цена</dt>
+                <dd class="card__value">400 ₽</dd>
+              </div>
+            </dl>
+            <button class="button button--green card__button" type="button">Заказать</button>
+          </div>
+        </li>
+        <li class="products__item">
+          <div class="card">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/product-6-desktop@1x.webp 1x, ./images/product-6-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-6-tablet@1x.webp 1x, ./images/product-6-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
+              <source srcset="./images/product-6-mobile@1x.webp 1x, ./images/product-6-mobile@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1200px)" srcset="./images/product-6-desktop@1x.png 1x, ./images/product-6-desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-6-tablet@1x.png 1x, ./images/product-6-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="./images/product-6-mobile@1x.png" srcset="./images/product-6-mobile@1x.png 1x, ./images/product-6-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
+            </picture>
+            <h3 class="card__name">
+              <a class="card__name-link" href="#">Cat Energy SLIM 1000 г</a>
+            </h3>
+            <dl class="card__properties-list">
+              <div class="card__property-wrapper">
+                <dt class="card__property">Масса</dt>
+                <dd class="card__value">1000 г</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Вкус</dt>
+                <dd class="card__value">Гречка</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Цена</dt>
+                <dd class="card__value">700 ₽</dd>
+              </div>
+            </dl>
+            <button class="button button--green card__button" type="button">Заказать</button>
+          </div>
+        </li>
+        <li class="products__item">
+          <div class="card">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/product-7-desktop@1x.webp 1x, ./images/product-7-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-7-tablet@1x.webp 1x, ./images/product-7-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
+              <source srcset="./images/product-7-mobile@1x.webp 1x, ./images/product-7-mobile@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1200px)" srcset="./images/product-7-desktop@1x.png 1x, ./images/product-7-desktop@2x.png 2x" type="image/png" width="169" height="210">
+              <source media="(min-width: 768px)" srcset="./images/product-7-tablet@1x.png 1x, ./images/product-7-tablet@2x.png 2x" type="image/png" width="200" height="210">
+              <img class="card__image" src="./images/product-7-mobile@1x.png" srcset="./images/product-7-mobile@1x.png 1x, ./images/product-7-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
+            </picture>
+            <h3 class="card__name">
+              <a class="card__name-link" href="#">Cat Energy slim 500 г</a>
+            </h3>
+            <dl class="card__properties-list">
+              <div class="card__property-wrapper">
+                <dt class="card__property">Масса</dt>
+                <dd class="card__value">500 г</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Вкус</dt>
+                <dd class="card__value">Рис</dd>
+              </div>
+              <div class="card__property-wrapper">
+                <dt class="card__property">Цена</dt>
+                <dd class="card__value">500 ₽</dd>
+              </div>
+            </dl>
+            <button class="button button--green card__button" type="button">Заказать</button>
+          </div>
+        </li>
+        <li class="products__item">
+          <div class="load-more-card">
+            <p class="load-more-card__offer">Показать еще 100500 товаров</p>
+            <p class="load-more-card__suboffer">На самом деле вкусов гораздо больше!</p>
+            <button class="button button--grey load-more-card__button" type="button">Показать все</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="upsells">
+      <h2 class="upsells__title">
+        <span class="upsells__text">Дополнительные товары</span>
+      </h2>
+      <div class="upsells__content">
+        <ul class="upsells__list">
+          <li class="upsells__item">
+            <h3 class="upsells__name">Сахарозаменитель</h3>
+            <dl class="upsells__properties">
+              <div class="upsells__property-wrapper">
+                <dt class="visually-hidden">Объем</dt>
+                <dd class="upsells__volume">1 упаковка (100 г)</dd>
+              </div>
+              <div class="upsells__property-wrapper">
+                <dt class="visually-hidden">Цена</dt>
+                <dd class="upsells__price">200 ₽</dd>
+              </div>
+            </dl>
+            <button class="button button--green upsells__button" type="button">Заказать</button>
+          </li>
+          <li class="upsells__item">
+            <h3 class="upsells__name">Питьевая вода</h3>
+            <dl class="upsells__properties">
+              <div class="upsells__property-wrapper">
+                <dt class="visually-hidden">Объем</dt>
+                <dd class="upsells__volume">5 литров</dd>
+              </div>
+              <div class="upsells__property-wrapper">
+                <dt class="visually-hidden">Цена</dt>
+                <dd class="upsells__price">50 ₽</dd>
+              </div>
+            </dl>
+            <button class="button button--green upsells__button" type="button">Заказать</button>
+          </li>
+          <li class="upsells__item">
+            <h3 class="upsells__name">Молоко</h3>
+            <dl class="upsells__properties">
+              <div class="upsells__property-wrapper">
+                <dt class="visually-hidden">Объем</dt>
+                <dd class="upsells__volume">1 литр</dd>
+              </div>
+              <div class="upsells__property-wrapper">
+                <dt class="visually-hidden">Цена</dt>
+                <dd class="upsells__price">100 ₽</dd>
+              </div>
+            </dl>
+            <button class="button button--green upsells__button" type="button">Заказать</button>
+          </li>
+          <li class="upsells__item">
+            <h3 class="upsells__name">Витамины</h3>
+            <dl class="upsells__properties">
+              <div class="upsells__property-wrapper">
+                <dt class="visually-hidden">Объем</dt>
+                <dd class="upsells__volume">1 упаковка (30 г)</dd>
+              </div>
+              <div class="upsells__property-wrapper">
+                <dt class="visually-hidden">Цена</dt>
+                <dd class="upsells__price">300 ₽</dd>
+              </div>
+            </dl>
+            <button class="button button--green upsells__button" type="button">Заказать</button>
+          </li>
+        </ul>
+        <div class="upsells__gift">
+          <p class="upsells__information">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <h2 class="subscribe__title">
+        <span class="subscribe__text">Акции и новинки</span>
+      </h2>
+      <p class="subscribe__subtitle">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+      <form class="subscribe__form" method="post" action="https://echo.htmlacademy.ru">
+        <input class="subscribe__input" type="text" name="subscribe__email" id="email" placeholder="кuklachev@gmail.com" required>
+        <label class="subscribe__control visually-hidden" for="email">Ваш e-mail, чтобы подписаться на рассылку</label>
+        <button class="button button--green subscribe__button" type="submit">Подписаться</button>
+      </form>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+        <address class="contacts__address">
+          <span class="visually-hidden">Кэт Энерджи</span>
+          <p class="contacts__text">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </p>
+        </address>
+      </div>
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1808.6321873375584!2d30.320472476699386!3d59.938719162094245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xc7af30764648c6b1!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINC0LiAxOS84LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e1!3m2!1sru!2sru!4v1788170001206!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Интерактивная карта с расположением офиса Кэт Энерджи"></iframe>
+    </section>
+  </main>
+
+  <footer class="page-footer social">
+    <a class="page-footer__name" href="./index.html">
+      <img class="logo-text" src="./images/logo-text.svg" alt="Кэт Энерджи" width="128" height="24">
+    </a>
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--vk" href="#">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#">
+          <span class="visually-hidden">Ютуб</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="#">
+          <span class="visually-hidden">Телеграм</span>
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__developer">HTML Academy</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

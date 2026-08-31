@@ -1,0 +1,129 @@
+.subscribe {
+  padding: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 0 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 632px;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 752px;
+    padding-bottom: 104px;
+  }
+}
+
+.subscribe__title {
+  margin: 0;
+  font-family: $alter-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 30px;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0 0 76px 70px;
+  }
+
+  &::after {
+    @include pseudo-element(100%, 2px, $green_primary);
+    position: absolute;
+    top: 15px;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 22px;
+    }
+  }
+}
+
+.subscribe__text {
+  position: relative;
+  z-index: 2;
+  background-color: $white;
+  padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+}
+
+.subscribe__subtitle {
+  padding: 1px 30px 24px 32px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $alter-font;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    padding: 0 68px 24px;
+  }
+}
+
+.subscribe__input {
+  box-sizing: border-box;
+  display: block;
+  width: 280px;
+  height: 56px;
+  padding: 13px;
+  border: solid 1px $supreme_decorative;
+  color: $special_dark_grey;
+  font-family: $primary-font;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
+}
+
+.subscribe__button {
+  width: 280px;
+  height: 56px;
+  font-size: 20px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+}

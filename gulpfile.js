@@ -66,6 +66,7 @@ export function processStyles () {
       lightningcss({
         lightningcssOptions: {
           minify: !isDevelopment,
+          sourceMap: isDevelopment,
         },
       })
     ]))

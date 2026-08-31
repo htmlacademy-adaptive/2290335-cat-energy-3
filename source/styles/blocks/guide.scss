@@ -1,0 +1,109 @@
+.guide {
+  padding: 24px 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 47px;
+    border-bottom: solid 1px $border_line;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding: 69px 110px 0;
+  }
+}
+
+.guide__title {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 32px;
+  }
+}
+
+.guide__list {
+  @include resetTagUl;
+  counter-reset: guide-counter;
+  color: $special_dark_grey;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    gap: 37px 134px;
+    flex-flow: row wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 73px;
+  }
+}
+
+.guide__item {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  counter-increment: guide-counter;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
+    height: 280px;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 40px 0 57px;
+  }
+
+  &::before {
+    @include pseudo-element(60px, 60px, $white);
+    flex-shrink: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 11px;
+    }
+  }
+
+  &::after {
+    content: counter(guide-counter);
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    right: 0;
+    font-family: $alter-font;
+    font-size: 280px;
+    line-height: 1;
+    font-weight: 700;
+    color: $basic_grey;
+    opacity: 1;
+  }
+
+  &:nth-child(1)::before {
+    background-image: url("../../icons/stack.svg/#leaf-icon");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("../../icons/stack.svg/#mixture-icon");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../../icons/stack.svg/#fork-icon");
+  }
+
+  &:nth-child(4)::before {
+    background-image: url("../../icons/stack.svg/#clock-icon");
+  }
+}
+
+.guide__text {
+  margin: 0;
+}

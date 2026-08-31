@@ -1,0 +1,71 @@
+.products {
+  padding: 0 20px;
+  border-top: solid 1px $border_line_2;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 0;
+  }
+}
+
+.products__title {
+  margin: 0;
+  font-family: $alter-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 27px 0 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 65px 0 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 84px;
+  }
+}
+
+.products__list {
+  @include resetTagUl;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 63px 80px;
+  }
+}
+
+.products__item {
+  border-bottom: solid 1px $special_grey_3;
+  box-sizing: border-box;
+
+  @media (max-width: $mobile-width-only) {
+    &:first-child {
+      border-top: solid 1px $special_grey_3;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  // Карточка "Показать еще 100500 товаров"
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+      box-sizing: border-box;
+      align-self: flex-end;
+      outline: solid 2px $basic_grey;
+    }
+  }
+}
