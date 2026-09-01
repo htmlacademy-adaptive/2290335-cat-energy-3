@@ -202,7 +202,7 @@
 .upsells__gift {
   height: 290px;
   background-color: $green_primary-85;
-  background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("./images/catalog-upsells-mobile@1x.png");
+  background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("/images/catalog-upsells-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -212,7 +212,7 @@
   align-items: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("./images/catalog-upsells-mobile@2x.png");
+    background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("/images/catalog-upsells-mobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
@@ -221,18 +221,18 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-top: 70px;
-    background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("./images/catalog-upsells-tablet@1x.png");
+    background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("/images/catalog-upsells-tablet@1x.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("./images/catalog-upsells-tablet@2x.png");
+      background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("/images/catalog-upsells-tablet@2x.png");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("./images/catalog-upsells-desktop@1x.png");
+    background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("/images/catalog-upsells-desktop@1x.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("./images/catalog-upsells-desktop@2x.png");
+      background-image: linear-gradient(to bottom, $green_primary-85 0%, $green_primary-85 100%), url("/images/catalog-upsells-desktop@2x.png");
     }
 
     width: 245px;

@@ -1,12 +1,15 @@
 /* GLOBAL */
-@import "./common/variables.scss";
+@import "./common/variables";
 @import "common/mixins";
-@import "./common/fonts.scss";
-@import "./common/global.scss";
+@import "./common/fonts";
+@import "./common/visually-hidden";
+@import "./common/global";
+@import "./common/titles";
+@import "./common/buttons";
 
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/header";
 @import "./blocks/products";
 @import "./blocks/card";
 @import "./blocks/load-more-card";
@@ -14,7 +17,7 @@
 @import "./blocks/subscribe";
 @import "./blocks/contacts";
 @import "./blocks/footer";
-@import "./blocks/promo.scss";
-@import "./blocks/programs.scss";
-@import "./blocks/guide.scss";
-@import "./blocks/story.scss";
+@import "./blocks/promo";
+@import "./blocks/programs";
+@import "./blocks/guide";
+@import "./blocks/story";

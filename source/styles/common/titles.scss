@@ -1,0 +1,12 @@
+.title {
+  margin: 0;
+  font-family: $alter-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

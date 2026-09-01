@@ -1,0 +1,35 @@
+.button {
+  font-family: $alter-font;
+  width: 280px;
+  height: 40px;
+  text-transform: uppercase;
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+
+.button--green {
+  background-color: $green_primary;
+  color: $white;
+
+  &:hover {
+    background-color: $basic_green_2;
+  }
+
+  &:active {
+    color: $white-30;
+  }
+}
+
+.button--grey {
+  background-color: $basic_grey;
+  color: $special_dark_grey;
+
+  &:hover {
+    background-color: $special_grey_3;
+  }
+
+  &:active {
+    color: $special_grey_3;
+  }
+}

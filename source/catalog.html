@@ -9,6 +9,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/latoregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -49,13 +51,13 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./images/product-1-desktop@1x.webp 1x, ./images/product-1-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-1-tablet@1x.webp 1x, ./images/product-1-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
-              <source srcset="./images/product-1-mobile@1x.webp 1x, ./images/product-1-mobile@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="./images/product-1-mobile@1x.webp 1x, ./images/product-1-mobile@2x.webp 2x" type="image/webp" width="140" height="107">
               <source media="(min-width: 1200px)" srcset="./images/product-1-desktop@1x.png 1x, ./images/product-1-desktop@2x.png 2x" type="image/png" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-1-tablet@1x.png 1x, ./images/product-1-tablet@2x.png 2x" type="image/png" width="200" height="210">
               <img class="card__image" src="./images/product-1-mobile@1x.png" srcset="./images/product-1-mobile@1x.png 1x, ./images/product-1-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
             </picture>
             <h3 class="card__name">
-              <a class="card__name-link" href="#">Cat Energy PRO 500 г</a>
+              <a class="card__name-link" href="card1">Cat Energy PRO 500 г</a>
             </h3>
             <dl class="card__properties-list">
               <div class="card__property-wrapper">
@@ -71,7 +73,7 @@
                 <dd class="card__value">700 ₽</dd>
               </div>
             </dl>
-            <button class="button button--green card__button" type="button">Заказать</button>
+            <a class="button button--green card__button" href="order.html">Заказать</a>
           </div>
         </li>
         <li class="products__item">
@@ -79,13 +81,13 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./images/product-2-desktop@1x.webp 1x, ./images/product-2-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-2-tablet@1x.webp 1x, ./images/product-2-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
-              <source srcset="./images/product-1-mobile@1x.webp 1x, ./images/product-2-mobile@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="./images/product-1-mobile@1x.webp 1x, ./images/product-2-mobile@2x.webp 2x" type="image/webp" width="140" height="107">
               <source media="(min-width: 1200px)" srcset="./images/product-2-desktop@1x.png 1x, ./images/product-2-desktop@2x.png 2x" type="image/png" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-2-tablet@1x.png 1x, ./images/product-2-tablet@2x.png 2x" type="image/png" width="200" height="210">
               <img class="card__image" src="/images/product-2-mobile@1x.png" srcset="./images/product-2-mobile@1x.png 1x, ./images/product-2-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
             </picture>
             <h3 class="card__name">
-              <a class="card__name-link" href="#">Cat Energy PRO 1000 г</a>
+              <a class="card__name-link" href="card2">Cat Energy PRO 1000 г</a>
             </h3>
             <dl class="card__properties-list">
               <div class="card__property-wrapper">
@@ -101,7 +103,7 @@
                 <dd class="card__value">1000 ₽</dd>
               </div>
             </dl>
-            <button class="button button--green card__button" type="button">Заказать</button>
+            <a class="button button--green card__button" href="order.html">Заказать</a>
           </div>
         </li>
         <li class="products__item">
@@ -109,13 +111,13 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./images/product-3-desktop@1x.webp 1x, ./images/product-3-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-3-tablet@1x.webp 1x, ./images/product-3-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
-              <source srcset="./images/product-3-mobile@1x.webp 1x, ./images/product-3-mobile@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="./images/product-3-mobile@1x.webp 1x, ./images/product-3-mobile@2x.webp 2x" type="image/webp" width="140" height="107">
               <source media="(min-width: 1200px)" srcset="./images/product-3-desktop@1x.png 1x, ./images/product-3-desktop@2x.png 2x" type="image/png" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-3-tablet@1x.png 1x, ./images/product-3-tablet@2x.png 2x" type="image/png" width="200" height="210">
               <img class="card__image" src="./images/product-3-mobile@1x.png" srcset="./images/product-3-mobile@1x.png 1x, ./images/product-3-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
             </picture>
             <h3 class="card__name">
-              <a class="card__name-link" href="#">Cat Energy PRO 500 г</a>
+              <a class="card__name-link" href="card3">Cat Energy PRO 500 г</a>
             </h3>
             <dl class="card__properties-list">
               <div class="card__property-wrapper">
@@ -131,7 +133,7 @@
                 <dd class="card__value">700 ₽</dd>
               </div>
             </dl>
-            <button class="button button--green card__button" type="button">Заказать</button>
+            <a class="button button--green card__button" href="order.html">Заказать</a>
           </div>
         </li>
         <li class="products__item">
@@ -139,13 +141,13 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./images/product-4-desktop@1x.webp 1x, ./images/product-4-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-4-tablet@1x.webp 1x, ./images/product-4-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
-              <source srcset="./images/product-4-mobile@1x.webp 1x, ./images/product-4-mobile@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="./images/product-4-mobile@1x.webp 1x, ./images/product-4-mobile@2x.webp 2x" type="image/webp" width="140" height="107">
               <source media="(min-width: 1200px)" srcset="./images/product-4-desktop@1x.png 1x, ./images/product-4-desktop@2x.png 2x" type="image/png" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-4-tablet@1x.png 1x, ./images/product-4-tablet@2x.png 2x" type="image/png" width="200" height="210">
               <img class="card__image" src="./images/product-4-mobile@1x.png" srcset="./images/product-4-mobile@1x.png 1x, ./images/product-4-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
             </picture>
             <h3 class="card__name">
-              <a class="card__name-link" href="#">Cat Energy PRO 1000 г</a>
+              <a class="card__name-link" href="card4">Cat Energy PRO 1000 г</a>
             </h3>
             <dl class="card__properties-list">
               <div class="card__property-wrapper">
@@ -161,7 +163,7 @@
                 <dd class="card__value">1000 ₽</dd>
               </div>
             </dl>
-            <button class="button button--green card__button" type="button">Заказать</button>
+            <a class="button button--green card__button" href="order.html">Заказать</a>
           </div>
         </li>
         <li class="products__item">
@@ -169,13 +171,13 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./images/product-5-desktop@1x.webp 1x, ./images/product-5-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-5-tablet@1x.webp 1x, ./images/product-5-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
-              <source srcset="./images/product-5-mobile@1x.webp 1x, ./images/product-5-mobile@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="./images/product-5-mobile@1x.webp 1x, ./images/product-5-mobile@2x.webp 2x" type="image/webp" width="140" height="107">
               <source media="(min-width: 1200px)" srcset="./images/product-5-desktop@1x.png 1x, ./images/product-5-desktop@2x.png 2x" type="image/png" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-5-tablet@1x.png 1x, ./images/product-5-tablet@2x.png 2x" type="image/png" width="200" height="210">
               <img class="card__image" src="./images/product-5-mobile@1x.png" srcset="./images/product-5-mobile@1x.png 1x, ./images/product-5-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
             </picture>
             <h3 class="card__name">
-              <a class="card__name-link" href="#">Cat Energy sLIM 500 г</a>
+              <a class="card__name-link" href="card5">Cat Energy sLIM 500 г</a>
             </h3>
             <dl class="card__properties-list">
               <div class="card__property-wrapper">
@@ -191,7 +193,7 @@
                 <dd class="card__value">400 ₽</dd>
               </div>
             </dl>
-            <button class="button button--green card__button" type="button">Заказать</button>
+            <a class="button button--green card__button" href="order.html">Заказать</a>
           </div>
         </li>
         <li class="products__item">
@@ -199,13 +201,13 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./images/product-6-desktop@1x.webp 1x, ./images/product-6-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-6-tablet@1x.webp 1x, ./images/product-6-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
-              <source srcset="./images/product-6-mobile@1x.webp 1x, ./images/product-6-mobile@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="./images/product-6-mobile@1x.webp 1x, ./images/product-6-mobile@2x.webp 2x" type="image/webp" width="140" height="107">
               <source media="(min-width: 1200px)" srcset="./images/product-6-desktop@1x.png 1x, ./images/product-6-desktop@2x.png 2x" type="image/png" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-6-tablet@1x.png 1x, ./images/product-6-tablet@2x.png 2x" type="image/png" width="200" height="210">
               <img class="card__image" src="./images/product-6-mobile@1x.png" srcset="./images/product-6-mobile@1x.png 1x, ./images/product-6-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
             </picture>
             <h3 class="card__name">
-              <a class="card__name-link" href="#">Cat Energy SLIM 1000 г</a>
+              <a class="card__name-link" href="card6">Cat Energy SLIM 1000 г</a>
             </h3>
             <dl class="card__properties-list">
               <div class="card__property-wrapper">
@@ -221,7 +223,7 @@
                 <dd class="card__value">700 ₽</dd>
               </div>
             </dl>
-            <button class="button button--green card__button" type="button">Заказать</button>
+            <a class="button button--green card__button" href="order.html">Заказать</a>
           </div>
         </li>
         <li class="products__item">
@@ -229,7 +231,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./images/product-7-desktop@1x.webp 1x, ./images/product-7-desktop@2x.webp 2x" type="image/webp" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-7-tablet@1x.webp 1x, ./images/product-7-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
-              <source srcset="./images/product-7-mobile@1x.webp 1x, ./images/product-7-mobile@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="./images/product-7-mobile@1x.webp 1x, ./images/product-7-mobile@2x.webp 2x" type="image/webp" width="140" height="107">
               <source media="(min-width: 1200px)" srcset="./images/product-7-desktop@1x.png 1x, ./images/product-7-desktop@2x.png 2x" type="image/png" width="169" height="210">
               <source media="(min-width: 768px)" srcset="./images/product-7-tablet@1x.png 1x, ./images/product-7-tablet@2x.png 2x" type="image/png" width="200" height="210">
               <img class="card__image" src="./images/product-7-mobile@1x.png" srcset="./images/product-7-mobile@1x.png 1x, ./images/product-7-mobile@2x.png 2x" width="140" height="107" alt="Упаковка сухого корма Cat Energy">
@@ -251,7 +253,7 @@
                 <dd class="card__value">500 ₽</dd>
               </div>
             </dl>
-            <button class="button button--green card__button" type="button">Заказать</button>
+            <a class="button button--green card__button" href="order.html">Заказать</a>
           </div>
         </li>
         <li class="products__item">

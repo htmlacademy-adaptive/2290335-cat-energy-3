@@ -25,6 +25,14 @@
     border: none;
     margin-top: 5px;
   }
+
+  & .logo-text:is(:hover, :focus-visible, :focus) {
+    fill: $concreate_text;
+  }
+
+  & .logo-text:active {
+    fill: $concreate_active;
+  }
 }
 
 .social__list {
